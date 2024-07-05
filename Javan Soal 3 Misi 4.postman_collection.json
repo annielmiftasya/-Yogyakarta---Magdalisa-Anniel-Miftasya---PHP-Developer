@@ -1,0 +1,646 @@
+{
+	"info": {
+		"_postman_id": "41c86ddc-4cb1-458b-acda-1efcc7fc8315",
+		"name": "Javan Soal 3 Misi 4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "13993231"
+	},
+	"item": [
+		{
+			"name": "Get All Desa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://soal3misi4.test/api/desa?page=2",
+					"protocol": "http",
+					"host": [
+						"soal3misi4",
+						"test"
+					],
+					"path": [
+						"api",
+						"desa"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Desa",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://soal3misi4.test/api/desa?page=2",
+							"protocol": "http",
+							"host": [
+								"soal3misi4",
+								"test"
+							],
+							"path": [
+								"api",
+								"desa"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.27.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Jul 2024 18:41:26 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"current_page\": 2,\n        \"data\": [\n            {\n                \"id\": \"21\",\n                \"code\": \"1101022014\",\n                \"district_code\": \"110102\",\n                \"name\": \"KAMPUNG TINGGI\",\n                \"meta\": {\n                    \"lat\": \"3.1292818\",\n                    \"long\": \"97.3813708\",\n                    \"pos\": \"23891\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            },\n            {\n                \"id\": \"22\",\n                \"code\": \"1101022015\",\n                \"district_code\": \"110102\",\n                \"name\": \"RUAK\",\n                \"meta\": {\n                    \"lat\": \"NULL\",\n                    \"long\": \"NULL\",\n                    \"pos\": \"NULL\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            },\n            {\n                \"id\": \"23\",\n                \"code\": \"1101022016\",\n                \"district_code\": \"110102\",\n                \"name\": \"SIMPANG LHEE\",\n                \"meta\": {\n                    \"lat\": \"3.0786967\",\n                    \"long\": \"97.3233035\",\n                    \"pos\": \"23771\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            },\n            {\n                \"id\": \"24\",\n                \"code\": \"1101022017\",\n                \"district_code\": \"110102\",\n                \"name\": \"SUAQ GEURINGGENG\",\n                \"meta\": {\n                    \"lat\": \"NULL\",\n                    \"long\": \"NULL\",\n                    \"pos\": \"NULL\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            },\n            {\n                \"id\": \"25\",\n                \"code\": \"1101022018\",\n                \"district_code\": \"110102\",\n                \"name\": \"PASI KUALA BA'U\",\n                \"meta\": {\n                    \"lat\": \"NULL\",\n                    \"long\": \"NULL\",\n                    \"pos\": \"23771\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            },\n            {\n                \"id\": \"26\",\n                \"code\": \"1101022019\",\n                \"district_code\": \"110102\",\n                \"name\": \"KEDAI PADANG\",\n                \"meta\": {\n                    \"lat\": \"3.078771\",\n                    \"long\": \"97.3125058\",\n                    \"pos\": \"23771\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            },\n            {\n                \"id\": \"27\",\n                \"code\": \"1101022020\",\n                \"district_code\": \"110102\",\n                \"name\": \"KOTAFAJAR\",\n                \"meta\": {\n                    \"lat\": \"NULL\",\n                    \"long\": \"NULL\",\n                    \"pos\": \"97682\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            },\n            {\n                \"id\": \"28\",\n                \"code\": \"1101022021\",\n                \"district_code\": \"110102\",\n                \"name\": \"GUNUNG PUDUNG\",\n                \"meta\": {\n                    \"lat\": \"3.1415144\",\n                    \"long\": \"97.3871832\",\n                    \"pos\": \"38954\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            },\n            {\n                \"id\": \"29\",\n                \"code\": \"1101032001\",\n                \"district_code\": \"110103\",\n                \"name\": \"SUAQ BAKUNG\",\n                \"meta\": {\n                    \"lat\": \"NULL\",\n                    \"long\": \"NULL\",\n                    \"pos\": \"23772\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            },\n            {\n                \"id\": \"30\",\n                \"code\": \"1101032002\",\n                \"district_code\": \"110103\",\n                \"name\": \"RANTAU BINUANG\",\n                \"meta\": {\n                    \"lat\": \"3.065071\",\n                    \"long\": \"97.3165547\",\n                    \"pos\": \"23772\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            },\n            {\n                \"id\": \"31\",\n                \"code\": \"1101032003\",\n                \"district_code\": \"110103\",\n                \"name\": \"BARAT DAYA\",\n                \"meta\": {\n                    \"lat\": \"3.0512643\",\n                    \"long\": \"97.3368031\",\n                    \"pos\": \"23772\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            },\n            {\n                \"id\": \"32\",\n                \"code\": \"1101032004\",\n                \"district_code\": \"110103\",\n                \"name\": \"SIALANG\",\n                \"meta\": {\n                    \"lat\": \"3.0587189\",\n                    \"long\": \"97.3368031\",\n                    \"pos\": \"23772\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            },\n            {\n                \"id\": \"33\",\n                \"code\": \"1101032005\",\n                \"district_code\": \"110103\",\n                \"name\": \"KAPEH\",\n                \"meta\": {\n                    \"lat\": \"3.0618114\",\n                    \"long\": \"97.3388283\",\n                    \"pos\": \"23772\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            },\n            {\n                \"id\": \"34\",\n                \"code\": \"1101032006\",\n                \"district_code\": \"110103\",\n                \"name\": \"PULO IE\",\n                \"meta\": {\n                    \"lat\": \"3.0686416\",\n                    \"long\": \"97.3395034\",\n                    \"pos\": \"23772\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            },\n            {\n                \"id\": \"35\",\n                \"code\": \"1101032007\",\n                \"district_code\": \"110103\",\n                \"name\": \"KEDAI RUNDING\",\n                \"meta\": {\n                    \"lat\": \"3.0598409\",\n                    \"long\": \"97.3543566\",\n                    \"pos\": \"23772\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            },\n            {\n                \"id\": \"36\",\n                \"code\": \"1101032008\",\n                \"district_code\": \"110103\",\n                \"name\": \"KEDAI KANDANG\",\n                \"meta\": {\n                    \"lat\": \"3.063782\",\n                    \"long\": \"97.3233035\",\n                    \"pos\": \"23772\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            },\n            {\n                \"id\": \"37\",\n                \"code\": \"1101032009\",\n                \"district_code\": \"110103\",\n                \"name\": \"GAMPONG LUAR\",\n                \"meta\": {\n                    \"lat\": \"NULL\",\n                    \"long\": \"NULL\",\n                    \"pos\": \"NULL\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            },\n            {\n                \"id\": \"38\",\n                \"code\": \"1101032010\",\n                \"district_code\": \"110103\",\n                \"name\": \"UJUNG\",\n                \"meta\": {\n                    \"lat\": \"2.2788204\",\n                    \"long\": \"97.7824225\",\n                    \"pos\": \"23772\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            },\n            {\n                \"id\": \"39\",\n                \"code\": \"1101032011\",\n                \"district_code\": \"110103\",\n                \"name\": \"JUA\",\n                \"meta\": {\n                    \"lat\": \"3.0668378\",\n                    \"long\": \"97.330728\",\n                    \"pos\": \"23772\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            },\n            {\n                \"id\": \"40\",\n                \"code\": \"1101032012\",\n                \"district_code\": \"110103\",\n                \"name\": \"PASI MEURAPAT\",\n                \"meta\": {\n                    \"lat\": \"NULL\",\n                    \"long\": \"NULL\",\n                    \"pos\": \"23772\"\n                },\n                \"created_at\": \"2024-07-05 17:43:55\",\n                \"updated_at\": \"2024-07-05 17:43:55\"\n            }\n        ],\n        \"first_page_url\": \"http://soal3misi4.test/api/desa?page=1\",\n        \"from\": 21,\n        \"last_page\": 4191,\n        \"last_page_url\": \"http://soal3misi4.test/api/desa?page=4191\",\n        \"links\": [\n            {\n                \"url\": \"http://soal3misi4.test/api/desa?page=1\",\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/desa?page=1\",\n                \"label\": \"1\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/desa?page=2\",\n                \"label\": \"2\",\n                \"active\": true\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/desa?page=3\",\n                \"label\": \"3\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/desa?page=4\",\n                \"label\": \"4\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/desa?page=5\",\n                \"label\": \"5\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/desa?page=6\",\n                \"label\": \"6\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/desa?page=7\",\n                \"label\": \"7\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/desa?page=8\",\n                \"label\": \"8\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/desa?page=9\",\n                \"label\": \"9\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/desa?page=10\",\n                \"label\": \"10\",\n                \"active\": false\n            },\n            {\n                \"url\": null,\n                \"label\": \"...\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/desa?page=4190\",\n                \"label\": \"4190\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/desa?page=4191\",\n                \"label\": \"4191\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/desa?page=3\",\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"next_page_url\": \"http://soal3misi4.test/api/desa?page=3\",\n        \"path\": \"http://soal3misi4.test/api/desa\",\n        \"per_page\": 20,\n        \"prev_page_url\": \"http://soal3misi4.test/api/desa?page=1\",\n        \"to\": 40,\n        \"total\": 83815\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All District",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://soal3misi4.test/api/district?page=2",
+					"protocol": "http",
+					"host": [
+						"soal3misi4",
+						"test"
+					],
+					"path": [
+						"api",
+						"district"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All District",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://soal3misi4.test/api/district?page=2",
+							"protocol": "http",
+							"host": [
+								"soal3misi4",
+								"test"
+							],
+							"path": [
+								"api",
+								"district"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.27.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Jul 2024 18:46:18 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"current_page\": 2,\n        \"data\": [\n            {\n                \"id\": \"21\",\n                \"code\": \"110203\",\n                \"city_code\": \"1102\",\n                \"name\": \"BAMBEL\",\n                \"meta\": {\n                    \"lat\": \"3.4571553\",\n                    \"long\": \"97.90482\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            },\n            {\n                \"id\": \"22\",\n                \"code\": \"110204\",\n                \"city_code\": \"1102\",\n                \"name\": \"BABUSSALAM\",\n                \"meta\": {\n                    \"lat\": \"3.4930695\",\n                    \"long\": \"97.8014482\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            },\n            {\n                \"id\": \"23\",\n                \"code\": \"110205\",\n                \"city_code\": \"1102\",\n                \"name\": \"BADAR\",\n                \"meta\": {\n                    \"lat\": \"3.5781694\",\n                    \"long\": \"97.8177601\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            },\n            {\n                \"id\": \"24\",\n                \"code\": \"110206\",\n                \"city_code\": \"1102\",\n                \"name\": \"BABUL MAKMUR\",\n                \"meta\": {\n                    \"lat\": \"3.3165133\",\n                    \"long\": \"97.991986\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            },\n            {\n                \"id\": \"25\",\n                \"code\": \"110207\",\n                \"city_code\": \"1102\",\n                \"name\": \"DARUL HASANAH\",\n                \"meta\": {\n                    \"lat\": \"3.510025\",\n                    \"long\": \"97.5680595\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            },\n            {\n                \"id\": \"26\",\n                \"code\": \"110208\",\n                \"city_code\": \"1102\",\n                \"name\": \"LAWE BULAN\",\n                \"meta\": {\n                    \"lat\": \"3.5025424\",\n                    \"long\": \"97.8667182\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            },\n            {\n                \"id\": \"27\",\n                \"code\": \"110209\",\n                \"city_code\": \"1102\",\n                \"name\": \"BUKIT TUSAM\",\n                \"meta\": {\n                    \"lat\": \"3.4124449\",\n                    \"long\": \"97.8667182\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            },\n            {\n                \"id\": \"28\",\n                \"code\": \"110210\",\n                \"city_code\": \"1102\",\n                \"name\": \"SEMADAM\",\n                \"meta\": {\n                    \"lat\": \"3.3922677\",\n                    \"long\": \"97.8884881\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            },\n            {\n                \"id\": \"29\",\n                \"code\": \"110211\",\n                \"city_code\": \"1102\",\n                \"name\": \"BABUL RAHMAH\",\n                \"meta\": {\n                    \"lat\": \"3.2799084\",\n                    \"long\": \"97.8912099\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            },\n            {\n                \"id\": \"30\",\n                \"code\": \"110212\",\n                \"city_code\": \"1102\",\n                \"name\": \"KETAMBE\",\n                \"meta\": {\n                    \"lat\": \"3.6895489\",\n                    \"long\": \"97.7199454\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            },\n            {\n                \"id\": \"31\",\n                \"code\": \"110213\",\n                \"city_code\": \"1102\",\n                \"name\": \"DELENG POKHKISEN\",\n                \"meta\": {\n                    \"lat\": \"3.5376711\",\n                    \"long\": \"97.8612767\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            },\n            {\n                \"id\": \"32\",\n                \"code\": \"110214\",\n                \"city_code\": \"1102\",\n                \"name\": \"LAWE SUMUR\",\n                \"meta\": {\n                    \"lat\": \"3.4823238\",\n                    \"long\": \"97.8884881\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            },\n            {\n                \"id\": \"33\",\n                \"code\": \"110215\",\n                \"city_code\": \"1102\",\n                \"name\": \"TANOH ALAS\",\n                \"meta\": {\n                    \"lat\": \"3.2842446\",\n                    \"long\": \"97.9729094\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            },\n            {\n                \"id\": \"34\",\n                \"code\": \"110216\",\n                \"city_code\": \"1102\",\n                \"name\": \"LEUSER\",\n                \"meta\": {\n                    \"lat\": \"NULL\",\n                    \"long\": \"NULL\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            },\n            {\n                \"id\": \"35\",\n                \"code\": \"110301\",\n                \"city_code\": \"1103\",\n                \"name\": \"DARUL AMAN\",\n                \"meta\": {\n                    \"lat\": \"4.962811\",\n                    \"long\": \"97.7090854\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            },\n            {\n                \"id\": \"36\",\n                \"code\": \"110302\",\n                \"city_code\": \"1103\",\n                \"name\": \"JULOK\",\n                \"meta\": {\n                    \"lat\": \"5.0364109\",\n                    \"long\": \"97.5897372\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            },\n            {\n                \"id\": \"37\",\n                \"code\": \"110303\",\n                \"city_code\": \"1103\",\n                \"name\": \"IDI RAYEUK\",\n                \"meta\": {\n                    \"lat\": \"4.9623026\",\n                    \"long\": \"97.7525352\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            },\n            {\n                \"id\": \"38\",\n                \"code\": \"110304\",\n                \"city_code\": \"1103\",\n                \"name\": \"BIREM BAYEUN\",\n                \"meta\": {\n                    \"lat\": \"4.4792278\",\n                    \"long\": \"97.8286368\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            },\n            {\n                \"id\": \"39\",\n                \"code\": \"110305\",\n                \"city_code\": \"1103\",\n                \"name\": \"SERBAJADI\",\n                \"meta\": {\n                    \"lat\": \"3.3881187\",\n                    \"long\": \"98.9355737\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            },\n            {\n                \"id\": \"40\",\n                \"code\": \"110306\",\n                \"city_code\": \"1103\",\n                \"name\": \"NURUSSALAM\",\n                \"meta\": {\n                    \"lat\": \"4.978844\",\n                    \"long\": \"97.6602365\"\n                },\n                \"created_at\": \"2024-07-05 17:43:54\",\n                \"updated_at\": \"2024-07-05 17:43:54\"\n            }\n        ],\n        \"first_page_url\": \"http://soal3misi4.test/api/district?page=1\",\n        \"from\": 21,\n        \"last_page\": 364,\n        \"last_page_url\": \"http://soal3misi4.test/api/district?page=364\",\n        \"links\": [\n            {\n                \"url\": \"http://soal3misi4.test/api/district?page=1\",\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/district?page=1\",\n                \"label\": \"1\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/district?page=2\",\n                \"label\": \"2\",\n                \"active\": true\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/district?page=3\",\n                \"label\": \"3\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/district?page=4\",\n                \"label\": \"4\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/district?page=5\",\n                \"label\": \"5\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/district?page=6\",\n                \"label\": \"6\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/district?page=7\",\n                \"label\": \"7\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/district?page=8\",\n                \"label\": \"8\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/district?page=9\",\n                \"label\": \"9\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/district?page=10\",\n                \"label\": \"10\",\n                \"active\": false\n            },\n            {\n                \"url\": null,\n                \"label\": \"...\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/district?page=363\",\n                \"label\": \"363\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/district?page=364\",\n                \"label\": \"364\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://soal3misi4.test/api/district?page=3\",\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"next_page_url\": \"http://soal3misi4.test/api/district?page=3\",\n        \"path\": \"http://soal3misi4.test/api/district\",\n        \"per_page\": 20,\n        \"prev_page_url\": \"http://soal3misi4.test/api/district?page=1\",\n        \"to\": 40,\n        \"total\": 7266\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Detail Desa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://soal3misi4.test/api/desa/:desa_id",
+					"protocol": "http",
+					"host": [
+						"soal3misi4",
+						"test"
+					],
+					"path": [
+						"api",
+						"desa",
+						":desa_id"
+					],
+					"variable": [
+						{
+							"key": "desa_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Detail Desa",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://soal3misi4.test/api/desa/:desa_id",
+							"protocol": "http",
+							"host": [
+								"soal3misi4",
+								"test"
+							],
+							"path": [
+								"api",
+								"desa",
+								":desa_id"
+							],
+							"variable": [
+								{
+									"key": "desa_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.27.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Jul 2024 18:41:11 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": \"2\",\n        \"code\": \"1101012002\",\n        \"district_code\": \"110101\",\n        \"name\": \"UJONG MANGKI\",\n        \"meta\": {\n            \"lat\": \"NULL\",\n            \"long\": \"NULL\",\n            \"pos\": \"23773\"\n        },\n        \"created_at\": \"2024-07-05 17:43:55\",\n        \"updated_at\": \"2024-07-05 17:43:55\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Desa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://soal3misi4.test/api/desa/:desa_id",
+					"protocol": "http",
+					"host": [
+						"soal3misi4",
+						"test"
+					],
+					"path": [
+						"api",
+						"desa",
+						":desa_id"
+					],
+					"variable": [
+						{
+							"key": "desa_id",
+							"value": "83812"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Desa",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://soal3misi4.test/api/desa/:desa_id",
+							"protocol": "http",
+							"host": [
+								"soal3misi4",
+								"test"
+							],
+							"path": [
+								"api",
+								"desa",
+								":desa_id"
+							],
+							"variable": [
+								{
+									"key": "desa_id",
+									"value": "83812"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.27.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Jul 2024 18:20:32 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Desa deleted\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Desa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Desa Baru1\",\n    \"district_code\": 110102\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://soal3misi4.test/api/desa"
+			},
+			"response": [
+				{
+					"name": "Create Desa",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Desa Baru1\",\n    \"district_code\": 110102\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://soal3misi4.test/api/desa"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.27.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Jul 2024 18:19:34 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Desa created successfully\",\n    \"data\": {\n        \"district_code\": 110102,\n        \"name\": \"Desa Baru1\",\n        \"code\": \"110102024\",\n        \"id\": \"83812\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Edit Desa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Desa update\",\n    \"district_code\": 110104\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://soal3misi4.test/api/desa/:desa_id",
+					"protocol": "http",
+					"host": [
+						"soal3misi4",
+						"test"
+					],
+					"path": [
+						"api",
+						"desa",
+						":desa_id"
+					],
+					"variable": [
+						{
+							"key": "desa_id",
+							"value": "83821"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Edit Desa",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Desa update\",\n    \"district_code\": 110104\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://soal3misi4.test/api/desa/:desa_id",
+							"protocol": "http",
+							"host": [
+								"soal3misi4",
+								"test"
+							],
+							"path": [
+								"api",
+								"desa",
+								":desa_id"
+							],
+							"variable": [
+								{
+									"key": "desa_id",
+									"value": "83821"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.27.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Jul 2024 18:39:04 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Desa updated successfully\",\n    \"data\": {\n        \"id\": \"83821\",\n        \"code\": \"110104018\",\n        \"district_code\": 110104,\n        \"name\": \"Desa update\",\n        \"meta\": null,\n        \"created_at\": \"2024-07-05 18:38:40\",\n        \"updated_at\": \"2024-07-05T18:39:04.887759Z\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
