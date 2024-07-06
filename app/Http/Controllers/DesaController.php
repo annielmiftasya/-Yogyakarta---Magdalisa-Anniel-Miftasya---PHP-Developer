@@ -34,26 +34,28 @@ class DesaController extends Controller
 
     public function store(Request $request)
     {
-        $data = $request->validate([
+        $validator = Validator::make($request->all(), [
             'district_code' => 'required',
             'name' => 'required',
             'lat' => 'nullable',
             'long' => 'nullable',
             'pos' => 'nullable',
         ]);
-
-            $code = $this->generateUniqueCode($data['district_code']);
-            $data['code'] = $code;
-
-            $data['created_at'] = now();
-            $data['updated_at'] = now();
-
-
-            $desa = Village::create($data);
-
-            DB::commit();
-
-            return response()->json(['message' => 'Desa created successfully', 'data' => $desa], 201);
+    
+        if ($validator->fails()) {
+            return response()->json($validator->errors(), 422);
+        }
+    
+        $data = $request->only(['district_code', 'name', 'lat', 'long', 'pos']);
+    
+        $code = $this->generateUniqueCode($data['district_code']);
+        $data['code'] = $code;
+        $data['created_at'] = now();
+        $data['updated_at'] = now();
+    
+        $desa = Village::create($data);
+    
+        return response()->json(['message' => 'Desa created successfully', 'data' => $desa], 201);
     }
 
     public function update(Request $request, $id)
@@ -62,22 +64,22 @@ class DesaController extends Controller
         if (!$desa) {
             return response()->json(['message' => 'Desa not found'], 404);
         }
-
+    
         $validator = Validator::make($request->all(), [
             'district_code' => 'required',
             'name' => 'required',
         ]);
-
+    
         if ($validator->fails()) {
             return response()->json($validator->errors(), 422);
         }
-
+    
         $data = [
             'district_code' => $request->district_code,
             'name' => $request->name,
             'updated_at' => now(),
         ];
-
+    
         if ($request->has('lat')) {
             $data['meta->lat'] = $request->lat;
         }
@@ -87,15 +89,14 @@ class DesaController extends Controller
         if ($request->has('pos')) {
             $data['meta->pos'] = $request->pos;
         }
-
+    
         if ($desa->district_code !== $request->district_code) {
             $newCode = $this->generateUniqueCode($request->district_code);
             $data['code'] = $newCode;
         }
-
-       
+    
         $desa->update($data);
-
+    
         return response()->json(['message' => 'Desa updated successfully', 'data' => $desa]);
     }
 
